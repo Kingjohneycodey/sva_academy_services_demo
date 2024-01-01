@@ -1,0 +1,2774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UX/UI and Software Development for Mobile and Web Apps | Designli</title>
+    <base href="/">
+
+
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
+    <!--<link rel="manifest" href="manifest.webmanifest">-->
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="From mobile app design and custom web development to UX/UI services. Discover why we're a leading software development firm for enterprises and startups.">
+    <meta name="theme-color" content="#1976d2">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;display=swap" rel="stylesheet">
+    <!--  <link rel="prefetch" href="/assets/animations/images/wfall_copy2.webp" />-->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js" defer=""></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-596FGPJ');</script>
+    <!-- End Google Tag Manager -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Designli",
+        "description": "Designli is the Southeast's top Mobile App, Web, and Custom Software Development firm. Whether you're a Startup or need an Enterprise app we're your partner that can deliver. Let's build together.",
+        "logo": "https://designli.co/assets/images/logo-new-footer.svg",
+        "url": "https://designli.co/",
+        "telephone": "+1 864-516-8805",
+        "sameAs": ["https://twitter.com/designlico","https://www.linkedin.com/company/designli/about/","https://www.facebook.com/designli","https://twitter.com/designlico","https://www.crunchbase.com/organization/designli"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "141 Traction St",
+          "addressLocality": "Greenville",
+          "postalCode": "29611",
+          "addressCountry": "United States"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Designli",
+        "image": "",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "ratingCount": "72"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Designli",
+        "image": "https://designli.co/assets/images/logo-new-footer.svg",
+        "@id": "",
+        "url": "https://designli.co/",
+        "telephone": "+1 864-516-8805",
+        "priceRange": "$5000+",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "141 Traction St",
+          "addressLocality": "Greenville",
+          "addressRegion": "SC",
+          "postalCode": "29611",
+          "addressCountry": "US"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="styles.371da6be35a4623c1593.css">
+    <style ng-transition="serverApp"></style>
+    <style ng-transition="serverApp">
+        .logo[_ngcontent-sc1] {
+            position: absolute;
+            z-index: 9999;
+            width: 100%;
+            text-align: center;
+            height: 40%;
+            margin-top: 2%
+        }
+
+        .logo[_ngcontent-sc1] img[_ngcontent-sc1] {
+            height: 70%;
+            margin-bottom: 1%
+        }
+
+        .logo[_ngcontent-sc1] h2[_ngcontent-sc1] {
+            color: #fff;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: "Favorit light", serif;
+            letter-spacing: 10px
+        }
+
+        .logo[_ngcontent-sc1] h2[_ngcontent-sc1] span[_ngcontent-sc1] {
+            display: block
+        }
+
+        .lds-ripple[_ngcontent-sc1] {
+            display: block;
+            margin: auto;
+            position: relative;
+            width: 80px;
+            height: 80px
+        }
+
+        .lds-ripple[_ngcontent-sc1] div[_ngcontent-sc1] {
+            position: absolute;
+            border: 4px solid #ff5b63;
+            opacity: 1;
+            border-radius: 50%;
+            animation: 1s cubic-bezier(0, .2, .8, 1) infinite lds-ripple
+        }
+
+        .lds-ripple[_ngcontent-sc1] div[_ngcontent-sc1]:nth-child(2) {
+            animation-delay: -.5s
+        }
+
+        .mySpinner[_ngcontent-sc1] {
+            background-color: #1a0d39;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            z-index: 999999999999
+        }
+
+        router-outlet.loading[_ngcontent-sc1] {
+            height: 100vh;
+            overflow: hidden
+        }
+
+        @keyframes lds-ripple {
+            0% {
+                top: 36px;
+                left: 36px;
+                width: 0;
+                height: 0;
+                opacity: 1
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                width: 72px;
+                height: 72px;
+                opacity: 0
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            .logo[_ngcontent-sc1] img[_ngcontent-sc1] {
+                height: 40%;
+                margin-bottom: 10%;
+                margin-top: 25%
+            }
+
+            .logo[_ngcontent-sc1] h2[_ngcontent-sc1] {
+                font-size: 15px;
+                padding: 0 15px
+            }
+        }
+    </style>
+    <style ng-transition="serverApp">
+        [_nghost-sc2] {
+            position: absolute
+        }
+
+        #my-header[_ngcontent-sc2] {
+            position: fixed;
+            display: flex;
+            width: 100%;
+            z-index: 1000000000000000100000
+        }
+
+        .header-entry[_ngcontent-sc2] {
+            z-index: 9999;
+            font-size: 14px;
+            cursor: pointer
+        }
+
+        .header-entry[_ngcontent-sc2] a[_ngcontent-sc2] {
+            color: #fff;
+            margin: 25px;
+            display: block;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            border: 1px solid transparent;
+            transition-duration: .5s;
+            text-align: center
+        }
+
+        .header-entry[_ngcontent-sc2] a.active[_ngcontent-sc2]:not(.schedule) {
+            border-bottom: 1px solid #fff
+        }
+
+        .header-entry[_ngcontent-sc2] a[_ngcontent-sc2]:not(.schedule):hover {
+            border: 1px solid #fff
+        }
+
+        .header-entry-group[_ngcontent-sc2] {
+            display: flex;
+            justify-content: space-around;
+            z-index: 9999
+        }
+
+        .header-desktop[_ngcontent-sc2] {
+            display: flex;
+            width: 100%
+        }
+
+        .header-mobile[_ngcontent-sc2],
+        .mobileMenu[_ngcontent-sc2] {
+            display: none
+        }
+
+        .mobile-title[_ngcontent-sc2] {
+            color: #fff;
+            font-size: 28px;
+            margin: 15px 0;
+            padding-left: 15px
+        }
+
+        .menu-icon[_ngcontent-sc2] {
+            text-align: right
+        }
+
+        .menu-icon[_ngcontent-sc2] img[_ngcontent-sc2] {
+            width: 25%;
+            margin-top: 15px;
+            height: auto
+        }
+
+        .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] {
+            margin-left: 0;
+            text-align: center;
+            margin-top: 35%
+        }
+
+        .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] li[_ngcontent-sc2] {
+            padding: 15px 0
+        }
+
+        .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] li[_ngcontent-sc2] a[_ngcontent-sc2] {
+            color: #fff;
+            font-size: 20px
+        }
+
+        .mobileMenu[_ngcontent-sc2] .fa-times[_ngcontent-sc2] {
+            color: #fff;
+            font-size: 30px;
+            -webkit-text-stroke: 2px #000;
+            position: absolute;
+            top: 10px;
+            right: 10px
+        }
+
+        .scrolledHeader[_ngcontent-sc2] {
+            background-color: #1a0d39;
+            transition-duration: .5s
+        }
+
+        .scrolledHeader[_ngcontent-sc2] .header-entry[_ngcontent-sc2] a[_ngcontent-sc2] {
+            margin: 0;
+            transition-duration: .5s
+        }
+
+        .header-entry[_ngcontent-sc2] a.schedule[_ngcontent-sc2] {
+            text-align: center;
+            border-bottom: 4px solid #f33f48;
+            color: #fff;
+            font-size: 14px;
+            background-color: #ff5b63;
+            line-height: 18px;
+            font-weight: 600;
+            padding: 5px 20px;
+            text-transform: uppercase;
+            display: block;
+            margin-top: 30px
+        }
+
+        a.schedule[_ngcontent-sc2] span[_ngcontent-sc2] {
+            display: block
+        }
+
+        .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] li[_ngcontent-sc2] a.schedule[_ngcontent-sc2] {
+            text-align: center;
+            border-bottom: 4px solid #f33f48;
+            color: #fff;
+            font-size: 14px;
+            background-color: #ff5b63;
+            line-height: 18px;
+            font-weight: 600;
+            padding: 5px 20px;
+            text-transform: uppercase;
+            display: block;
+            width: 170px;
+            margin: auto
+        }
+
+        .scrolledHeader[_ngcontent-sc2] .header-entry[_ngcontent-sc2] a.schedule[_ngcontent-sc2] {
+            margin-top: 4px !important
+        }
+
+        @media screen and (max-width:1396px) {
+            .header-entry[_ngcontent-sc2] a.schedule[_ngcontent-sc2] {
+                font-size: 10px;
+                padding: 0 20px;
+                line-height: 14px
+            }
+
+            .scrolledHeader[_ngcontent-sc2] .header-entry[_ngcontent-sc2] a.schedule[_ngcontent-sc2] {
+                margin-top: 3px !important
+            }
+
+            .header-entry[_ngcontent-sc2] a[_ngcontent-sc2] {
+                padding: 10px 20px;
+                font-size: 16px
+            }
+        }
+
+        @media screen and (max-width:1310px) {
+            .header-entry[_ngcontent-sc2] a[_ngcontent-sc2] {
+                margin: 15px;
+                padding: 15px 10px;
+                font-size: 14px
+            }
+
+            .header-entry[_ngcontent-sc2] a.schedule[_ngcontent-sc2] {
+                margin-top: 25px
+            }
+
+            .scrolledHeader[_ngcontent-sc2] .header-entry[_ngcontent-sc2] a.schedule[_ngcontent-sc2] {
+                margin-top: 7px !important
+            }
+        }
+
+        @media screen and (max-width:1070px) {
+            .header-entry[_ngcontent-sc2] a[_ngcontent-sc2] {
+                font-size: 12px
+            }
+        }
+
+        @media screen and (max-width:1024px) {
+            .header-entry[_ngcontent-sc2] {
+                margin: 0;
+                font-size: 14px;
+                padding: 0
+            }
+
+            .header-entry[_ngcontent-sc2] a[_ngcontent-sc2] {
+                margin: 0;
+                padding: 15px;
+                font-size: 14px
+            }
+
+            .header-entry[_ngcontent-sc2] a.schedule[_ngcontent-sc2] {
+                margin-top: 7px
+            }
+        }
+
+        @media screen and (max-width:960px) {
+            .header-entry[_ngcontent-sc2] {
+                margin: 0;
+                padding: 0
+            }
+
+            .header-entry[_ngcontent-sc2] a.schedule[_ngcontent-sc2] {
+                margin-top: 10px
+            }
+
+            .scrolledHeader[_ngcontent-sc2] .header-entry[_ngcontent-sc2] a[_ngcontent-sc2]:not(.schedule) {
+                padding: 15px
+            }
+
+            .header-entry[_ngcontent-sc2] a[_ngcontent-sc2] {
+                margin: 10px;
+                padding: 5px 15px;
+                font-size: 13px
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            .header-entry[_ngcontent-sc2] {
+                margin: 0;
+                font-size: 12px;
+                padding: 0
+            }
+
+            .header-entry[_ngcontent-sc2] a[_ngcontent-sc2] {
+                margin: 10px 3px 3px;
+                padding: 5px 15px;
+                font-size: 10px
+            }
+        }
+
+        @media screen and (max-width:850px) and (min-width:700px) and (min-height:300px) and (max-height:500px) {
+            .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] {
+                margin-top: 6% !important
+            }
+
+            .header-entry[_ngcontent-sc2] a[_ngcontent-sc2] {
+                margin: 5px !important;
+                padding: 5px 10px !important
+            }
+
+            .header-entry[_ngcontent-sc2] a.schedule[_ngcontent-sc2] {
+                font-size: 9px;
+                line-height: 10px
+            }
+
+            .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] li[_ngcontent-sc2] a[_ngcontent-sc2] {
+                color: #fff;
+                font-size: 17px
+            }
+
+            .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] li[_ngcontent-sc2] {
+                padding: 10px 0
+            }
+        }
+
+        @media screen and (max-width:690px) and (min-width:550px) and (min-height:300px) and (max-height:500px) {
+            .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] {
+                margin-top: 7% !important
+            }
+
+            .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] li[_ngcontent-sc2] {
+                padding: 10px 0
+            }
+
+            .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] li[_ngcontent-sc2] a[_ngcontent-sc2] {
+                font-size: 17px
+            }
+
+            .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] li[_ngcontent-sc2] a.schedule[_ngcontent-sc2] {
+                font-size: 12px
+            }
+        }
+
+        @media screen and (max-width:580px) and (min-width:540px) and (min-height:300px) and (max-height:500px) {
+            .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] li[_ngcontent-sc2] a[_ngcontent-sc2] {
+                font-size: 15px
+            }
+
+            .mobileMenu[_ngcontent-sc2] ul[_ngcontent-sc2] li[_ngcontent-sc2] {
+                padding: 7px 0
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .header-desktop[_ngcontent-sc2] {
+                display: none
+            }
+
+            .header-mobile[_ngcontent-sc2] {
+                display: block;
+                width: 100%;
+                padding: 10px 15px
+            }
+
+            .mobileMenu[_ngcontent-sc2] {
+                display: block;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: 9999999999;
+                background-color: rgba(0, 0, 0, .7)
+            }
+
+            .header-mobile[_ngcontent-sc2] .menuIcon[_ngcontent-sc2] {
+                float: right;
+                max-height: 25px
+            }
+
+            .header-mobile[_ngcontent-sc2] .logoMobile[_ngcontent-sc2] {
+                margin-top: 5px;
+                margin-left: 7px;
+                max-height: 20px
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            .header-mobile[_ngcontent-sc2] .logoMobile[_ngcontent-sc2] {
+                margin-top: 0;
+                margin-left: 0;
+                max-width: 100px
+            }
+
+            .header-mobile[_ngcontent-sc2] .menuIcon[_ngcontent-sc2] {
+                float: right;
+                max-height: 27px
+            }
+        }
+    </style>
+    <style ng-transition="serverApp">
+        @font-face {
+            font-family: CerebriSans-Bold;
+            src: url(CerebriSans-Bold.ttf)
+        }
+
+        @font-face {
+            font-family: CerebriSans-ExtraBold;
+            src: url(CerebriSans-ExtraBold.ttf)
+        }
+
+        .section[_ngcontent-sc26] {
+            overflow: hidden
+        }
+
+        .firstSection[_ngcontent-sc26] {
+            background-image: url([desktop]-Services@2x.jpg);
+            background-size: 100% 100%;
+            position: relative
+        }
+
+        .firstSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+            padding: 10% 15%
+        }
+
+        .firstSection[_ngcontent-sc26] .content[_ngcontent-sc26] img[_ngcontent-sc26] {
+            max-width: 90%;
+            display: block;
+            margin: auto
+        }
+
+        .firstSection[_ngcontent-sc26] .content[_ngcontent-sc26] .text[_ngcontent-sc26] {
+            padding-right: 5%
+        }
+
+        .secondSection[_ngcontent-sc26] {
+            background-image: url(background2@2x.jpg);
+            background-size: 100% 100%;
+            position: relative
+        }
+
+        .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+            padding: 3% 15%
+        }
+
+        .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .left[_ngcontent-sc26] {
+            -o-border-image: url(line.png) 1 repeat;
+            border-image: url(line.png) 1 repeat;
+            height: 100%;
+            border-right: 1px solid transparent
+        }
+
+        .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .left[_ngcontent-sc26] .block[_ngcontent-sc26] {
+            padding: 0 80px;
+            margin-bottom: 15%
+        }
+
+        .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .block[_ngcontent-sc26] h3[_ngcontent-sc26] {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 38px;
+            color: #fff;
+            margin-bottom: 20px;
+            position: relative;
+            font-family: CerebriSans-ExtraBold, serif
+        }
+
+        .secondSection[_ngcontent-sc26] .text[_ngcontent-sc26] img[_ngcontent-sc26] {
+            display: block;
+            width: 70%;
+            margin: 50px auto
+        }
+
+        .secondSection[_ngcontent-sc26] .text[_ngcontent-sc26] p[_ngcontent-sc26] {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 0;
+            font-weight: 100;
+            margin-bottom: 15px
+        }
+
+        .text[_ngcontent-sc26] a[_ngcontent-sc26] {
+            color: #ff5b63
+        }
+
+        .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .text[_ngcontent-sc26] {
+            margin-top: 0;
+            padding: 0 15%
+        }
+
+        .secondSection[_ngcontent-sc26] .cards[_ngcontent-sc26] {
+            margin-top: 10%;
+            padding: 0 15%
+        }
+
+        .secondSection[_ngcontent-sc26] .devCard.mov[_ngcontent-sc26] {
+            background-image: linear-gradient(to bottom, #72437e, #703b72, #6d3367, #692b5b, #652450);
+            padding: 30px 20px
+        }
+
+        .secondSection[_ngcontent-sc26] .devCard.blue[_ngcontent-sc26] {
+            background-image: linear-gradient(to bottom, #1b1845, #1d1847, #1f174a, #21174c, #23164e);
+            padding: 30px 20px
+        }
+
+        .devCard[_ngcontent-sc26] h2[_ngcontent-sc26] {
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 30px;
+            color: #fff;
+            margin-bottom: 20px;
+            position: relative;
+            font-family: CerebriSans-Bold, serif;
+            min-height: 60px;
+            text-align: left
+        }
+
+        .devCard[_ngcontent-sc26] .btn-learn[_ngcontent-sc26] {
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            background-color: #ff5b63;
+            line-height: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            display: block;
+            box-shadow: none;
+            outline: 0;
+            border-radius: 0
+        }
+
+        .devCard[_ngcontent-sc26] ul[_ngcontent-sc26] {
+            list-style: circle;
+            color: #fff;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            min-height: 180px
+        }
+
+        .devCard[_ngcontent-sc26] ul[_ngcontent-sc26] li[_ngcontent-sc26] {
+            color: #fff;
+            font-size: 18px;
+            line-height: 26px;
+            margin-top: 0;
+            font-weight: 100;
+            padding: 5px 0
+        }
+
+        .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .block[_ngcontent-sc26] h3[_ngcontent-sc26] img[_ngcontent-sc26] {
+            position: absolute;
+            left: -60px;
+            max-height: 35px;
+            top: -3px
+        }
+
+        .secondSection[_ngcontent-sc26] .text[_ngcontent-sc26] .col-lg-6[_ngcontent-sc26] {
+            padding: 0
+        }
+
+        .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .right[_ngcontent-sc26] .block[_ngcontent-sc26] {
+            padding: 0 80px;
+            margin-top: 15%
+        }
+
+        .thirdSection[_ngcontent-sc26] {
+            background-image: url(background3@2x.jpg);
+            background-size: 100% 100%;
+            position: relative
+        }
+
+        .thirdSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+            padding: 1% 15%
+        }
+
+        .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] {
+            background-image: url(keith@2x.png);
+            background-size: cover;
+            position: relative;
+            margin-top: 50px
+        }
+
+        .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] .text[_ngcontent-sc26] {
+            padding: 30% 5% 20%
+        }
+
+        .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] h3[_ngcontent-sc26] {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 38px;
+            color: #fff;
+            margin-bottom: 20px;
+            position: relative;
+            font-family: CerebriSans-ExtraBold, serif
+        }
+
+        .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] p[_ngcontent-sc26] {
+            color: #fff;
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            font-weight: 100;
+            font-family: Rubik, sans-serif
+        }
+
+        .fourthSection[_ngcontent-sc26] {
+            background-image: url(background3@2x.jpg);
+            background-size: 100% 100%;
+            position: relative
+        }
+
+        .fourthSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+            padding: 2% 15%
+        }
+
+        .fourthSection[_ngcontent-sc26] p.subtitle[_ngcontent-sc26] {
+            color: #fff;
+            font-size: 26px;
+            line-height: 34px;
+            font-weight: 100;
+            text-align: center;
+            width: 40%;
+            margin: 0 auto;
+            font-family: CerebriSans-ExtraBold, serif
+        }
+
+        .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] {
+            background-image: url(josh@2x.png);
+            background-size: cover;
+            position: relative;
+            margin-top: 50px;
+            margin-bottom: 60px
+        }
+
+        .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] .text[_ngcontent-sc26] {
+            padding: 30% 5% 20%
+        }
+
+        .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] h3[_ngcontent-sc26] {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 38px;
+            color: #fff;
+            margin-bottom: 20px;
+            position: relative;
+            font-family: CerebriSans-ExtraBold, serif
+        }
+
+        .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] p[_ngcontent-sc26] {
+            color: #fff;
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            font-weight: 100;
+            font-family: Rubik, sans-serif
+        }
+
+        .fifthSection[_ngcontent-sc26] {
+            background-image: url(background4@2x.jpg);
+            background-size: 100% 100%;
+            position: relative
+        }
+
+        .fifthSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+            padding: 4% 0
+        }
+
+        .fifthSection[_ngcontent-sc26] h2[_ngcontent-sc26] {
+            font-size: 62px;
+            font-weight: 700;
+            line-height: 74px;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: CerebriSans-ExtraBold, serif
+        }
+
+        .fifthSection[_ngcontent-sc26] p[_ngcontent-sc26] {
+            color: #fff;
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 10px;
+            font-weight: 100;
+            text-align: center;
+            font-family: Rubik, sans-serif
+        }
+
+        .fifthSection[_ngcontent-sc26] .btn-build[_ngcontent-sc26] {
+            border: 0;
+            text-transform: uppercase;
+            box-shadow: none;
+            border-bottom: 8px solid #f33f48;
+            color: #fff;
+            font-size: 18px;
+            background-color: #ff5b63;
+            border-radius: 0;
+            width: 280px;
+            padding: 12px;
+            display: block;
+            font-family: CerebriSans-Bold, serif;
+            margin: 35px auto 0
+        }
+
+        .secondSection[_ngcontent-sc26] .devCard[_ngcontent-sc26] {
+            margin-bottom: 15px
+        }
+
+        .parallax[_ngcontent-sc26] {
+            top: 0;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            background: url(parallax_background.jpg) center center/cover no-repeat fixed
+        }
+
+        .firstImage[_ngcontent-sc26] {
+            margin-bottom: 100px
+        }
+
+        .v-align[_ngcontent-sc26] {
+            display: flex;
+            align-items: center
+        }
+
+        .secondSection[_ngcontent-sc26] h2[_ngcontent-sc26] {
+            text-align: left;
+            font-size: 32px
+        }
+
+        @media screen and (max-width:1680px) {
+            .firstSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 15%
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 7% 12%
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .block[_ngcontent-sc26] h3[_ngcontent-sc26] {
+                font-size: 28px;
+                line-height: 36px
+            }
+
+            .thirdSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 2% 15%
+            }
+
+            .fourthSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 4% 15%
+            }
+
+            .fifthSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 4% 0
+            }
+
+            .fourthSection[_ngcontent-sc26] p.subtitle[_ngcontent-sc26] {
+                font-size: 20px;
+                line-height: 32px
+            }
+        }
+
+        @media screen and (max-width:1600px) {
+            .secondSection[_ngcontent-sc26] .cards[_ngcontent-sc26] {
+                padding: 0 10%
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .block[_ngcontent-sc26] h3[_ngcontent-sc26] {
+                font-size: 26px;
+                line-height: 36px
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 5% 10%
+            }
+
+            .thirdSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 2% 15%
+            }
+
+            .fourthSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 3% 15%
+            }
+
+            .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] p[_ngcontent-sc26],
+            .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] p[_ngcontent-sc26] {
+                font-size: 14px;
+                line-height: 24px
+            }
+
+            .fourthSection[_ngcontent-sc26] p.subtitle[_ngcontent-sc26] {
+                font-size: 20px;
+                line-height: 32px
+            }
+        }
+
+        @media screen and (max-width:1440px) {
+            .devCard[_ngcontent-sc26] h2[_ngcontent-sc26] {
+                font-size: 22px;
+                line-height: 28px
+            }
+
+            .devCard[_ngcontent-sc26] ul[_ngcontent-sc26] li[_ngcontent-sc26] {
+                color: #fff;
+                font-size: 15px;
+                line-height: 24px
+            }
+
+            .devCard[_ngcontent-sc26] ul[_ngcontent-sc26] {
+                min-height: 170px
+            }
+
+            .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] .text[_ngcontent-sc26] {
+                padding: 25% 5% 10%
+            }
+
+            .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] .text[_ngcontent-sc26] {
+                padding: 25% 5% 15%
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .block[_ngcontent-sc26] h3[_ngcontent-sc26] {
+                font-size: 22px;
+                line-height: 26px
+            }
+        }
+
+        @media screen and (max-width:1366px) and (min-height:1024px) {
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 4% 7%
+            }
+
+            .firstSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 20% 15%
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .block[_ngcontent-sc26] h3[_ngcontent-sc26] img[_ngcontent-sc26] {
+                max-height: 30px;
+                max-height: 30px;
+                top: -3px
+            }
+
+            .thirdSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 2% 15%
+            }
+
+            .fourthSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 3% 15%
+            }
+        }
+
+        @media screen and (min-width:1366px) and (max-height:768px) {
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 4% 7%
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .block[_ngcontent-sc26] h3[_ngcontent-sc26] {
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 15px
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .left[_ngcontent-sc26] .block[_ngcontent-sc26],
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .right[_ngcontent-sc26] .block[_ngcontent-sc26] {
+                padding: 0 40px 0 80px
+            }
+
+            .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] p[_ngcontent-sc26],
+            .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] p[_ngcontent-sc26] {
+                font-size: 13px;
+                line-height: 20px
+            }
+
+            .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] {
+                margin-top: 25px
+            }
+        }
+
+        @media screen and (max-width:1280px) {
+            .secondSection[_ngcontent-sc26] .cards[_ngcontent-sc26] {
+                padding: 0 8%
+            }
+
+            .secondSection[_ngcontent-sc26] .devCard[_ngcontent-sc26] {
+                margin-bottom: 15px
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 4% 5%
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .block[_ngcontent-sc26] h3[_ngcontent-sc26] {
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 15px
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .left[_ngcontent-sc26] .block[_ngcontent-sc26],
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .right[_ngcontent-sc26] .block[_ngcontent-sc26] {
+                padding: 0 40px 0 80px
+            }
+
+            .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] p[_ngcontent-sc26],
+            .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] p[_ngcontent-sc26] {
+                font-size: 14px;
+                line-height: 20px
+            }
+
+            .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] {
+                margin-top: 25px
+            }
+        }
+
+        @media screen and (max-width:1024px) {
+            .secondSection[_ngcontent-sc26] .cards[_ngcontent-sc26] {
+                padding: 0
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 5% 15% !important
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .text[_ngcontent-sc26] {
+                padding: 0 5%
+            }
+
+            .devCard[_ngcontent-sc26] h2[_ngcontent-sc26] {
+                font-size: 24px;
+                line-height: 30px
+            }
+
+            .devCard[_ngcontent-sc26] ul[_ngcontent-sc26] li[_ngcontent-sc26] {
+                color: #fff;
+                font-size: 17px;
+                line-height: 22px
+            }
+
+            .firstSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 15% 10%
+            }
+
+            .fourthSection[_ngcontent-sc26] .content[_ngcontent-sc26],
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26],
+            .thirdSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 5%
+            }
+
+            .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] .text[_ngcontent-sc26],
+            .fourthSection[_ngcontent-sc26] .keith[_ngcontent-sc26] .text[_ngcontent-sc26] {
+                padding: 20% 5% 10%
+            }
+        }
+
+        @media screen and (max-width:960px) {
+            .devCard[_ngcontent-sc26] ul[_ngcontent-sc26] li[_ngcontent-sc26] {
+                font-size: 15px
+            }
+
+            .fifthSection[_ngcontent-sc26] h2[_ngcontent-sc26] {
+                font-size: 44px;
+                line-height: 56px
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .block[_ngcontent-sc26] h3[_ngcontent-sc26] img[_ngcontent-sc26] {
+                left: -33px;
+                max-height: 25px;
+                top: -2px
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .left[_ngcontent-sc26] .block[_ngcontent-sc26],
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .right[_ngcontent-sc26] .block[_ngcontent-sc26] {
+                padding: 0 20px 0 40px;
+                margin-bottom: 15%
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .right[_ngcontent-sc26] .block[_ngcontent-sc26] {
+                margin-top: 0
+            }
+
+            .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] {
+                margin-top: 25px
+            }
+
+            .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] .text[_ngcontent-sc26],
+            .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] .text[_ngcontent-sc26] {
+                padding: 20% 5% 5%
+            }
+
+            .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] {
+                margin-bottom: 40px
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 5% !important
+            }
+
+            .desktop[_ngcontent-sc26] {
+                display: block !important
+            }
+
+            .mobileIma[_ngcontent-sc26] {
+                display: none !important
+            }
+
+            .footerMobile[_ngcontent-sc26],
+            .hiddenDesktop[_ngcontent-sc26] {
+                display: none
+            }
+        }
+
+        @media screen and (max-width:767px) {
+
+            .footerDesktop[_ngcontent-sc26],
+            .hiddenMobile[_ngcontent-sc26],
+            .parallax[_ngcontent-sc26] {
+                display: none
+            }
+
+            img.desktop[_ngcontent-sc26] {
+                display: none !important
+            }
+
+            .mobileIma[_ngcontent-sc26] {
+                display: block;
+                margin-left: -12px;
+                color: #f8786a
+            }
+
+            .mobileIma[_ngcontent-sc26] img[_ngcontent-sc26] {
+                margin-left: 3px
+            }
+
+            .mobileIma[_ngcontent-sc26] i[_ngcontent-sc26] {
+                -webkit-text-stroke: 1px #180634
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .left[_ngcontent-sc26],
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .right[_ngcontent-sc26] {
+                -o-border-image: url(line.png) 1 repeat;
+                border-image: url(line.png) 1 repeat;
+                border-left: 1px solid transparent;
+                height: 100%;
+                margin-left: 15px;
+                border-right: 0
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .left[_ngcontent-sc26] .block[_ngcontent-sc26],
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .right[_ngcontent-sc26] .block[_ngcontent-sc26] {
+                padding: 0 20px
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .block[_ngcontent-sc26] h3[_ngcontent-sc26] img[_ngcontent-sc26] {
+                left: 0;
+                max-height: 30px;
+                top: 0;
+                display: block;
+                margin-bottom: 10px;
+                position: relative
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 5% !important
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            .secondSection[_ngcontent-sc26] .text[_ngcontent-sc26] img[_ngcontent-sc26] {
+                display: block;
+                width: 100%;
+                margin: 25px auto
+            }
+
+            .devCard[_ngcontent-sc26] ul[_ngcontent-sc26] {
+                min-height: auto
+            }
+
+            .firstSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 20% 15px 15%
+            }
+
+            .firstSection[_ngcontent-sc26] .content[_ngcontent-sc26] img[_ngcontent-sc26] {
+                max-width: 120%;
+                max-width: 110%;
+                margin-top: 20px;
+                margin-left: -5%
+            }
+
+            .fourthSection[_ngcontent-sc26] .content[_ngcontent-sc26],
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26],
+            .thirdSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 10% 0 0
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .block[_ngcontent-sc26] h3[_ngcontent-sc26] img[_ngcontent-sc26] {
+                display: inline;
+                position: relative;
+                left: 0;
+                margin-bottom: 10px
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .left[_ngcontent-sc26] .block[_ngcontent-sc26],
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .right[_ngcontent-sc26] .block[_ngcontent-sc26] {
+                padding: 0 15px
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .block[_ngcontent-sc26] h3[_ngcontent-sc26] {
+                font-size: 22px;
+                line-height: 30px;
+                margin-bottom: 10px
+            }
+
+            .secondSection[_ngcontent-sc26] .content[_ngcontent-sc26] .text[_ngcontent-sc26] {
+                margin-top: 20px;
+                padding: 15px
+            }
+
+            .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] {
+                background-image: url(keith_mobile@2x.png);
+                margin: 10px 15px 0
+            }
+
+            .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] {
+                background-image: url(josh_mobile@2x.png);
+                margin: 10px 15px 25px
+            }
+
+            .fourthSection[_ngcontent-sc26] p.subtitle[_ngcontent-sc26] {
+                width: 70%
+            }
+
+            .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] h3[_ngcontent-sc26] {
+                font-size: 26px;
+                line-height: 32px;
+                margin-bottom: 10px
+            }
+
+            .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] p[_ngcontent-sc26],
+            .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] p[_ngcontent-sc26] {
+                font-size: 14px;
+                line-height: 19px
+            }
+
+            .fourthSection[_ngcontent-sc26],
+            .secondSection[_ngcontent-sc26],
+            .thirdSection[_ngcontent-sc26] {
+                height: auto
+            }
+
+            .firstImage[_ngcontent-sc26] {
+                margin-bottom: 200px
+            }
+
+            .firstSection[_ngcontent-sc26] {
+                background-image: url([mobile]-Services@2x.jpg);
+                background-size: 100% 100%
+            }
+
+            .fourthSection[_ngcontent-sc26] .josh[_ngcontent-sc26] .text[_ngcontent-sc26],
+            .thirdSection[_ngcontent-sc26] .keith[_ngcontent-sc26] .text[_ngcontent-sc26] {
+                padding: 145% 5% 5%
+            }
+
+            .fifthSection[_ngcontent-sc26] .content[_ngcontent-sc26] {
+                padding: 10% 0
+            }
+
+            .fifthSection[_ngcontent-sc26] h2[_ngcontent-sc26] {
+                font-size: 48px;
+                line-height: 54px
+            }
+
+            .fifthSection[_ngcontent-sc26] p[_ngcontent-sc26] {
+                font-size: 18px;
+                line-height: 25px
+            }
+        }
+
+        @media screen and (max-width:375px) {
+            .firstImage[_ngcontent-sc26] {
+                margin-bottom: 130px
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            .fifthSection[_ngcontent-sc26] h2[_ngcontent-sc26] {
+                font-size: 36px;
+                line-height: 40px
+            }
+
+            .fifthSection[_ngcontent-sc26] p[_ngcontent-sc26] {
+                font-size: 14px;
+                line-height: 20px
+            }
+        }
+    </style>
+    <style ng-transition="serverApp">
+        #footer[_ngcontent-sc22] {
+            background: linear-gradient(180deg, #020024 0, rgba(9, 9, 121, 0) 0, #0e1034 80%);
+            padding: 0 3% 10px
+        }
+
+        #footer[_ngcontent-sc22] h2[_ngcontent-sc22] {
+            color: #fff;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: "Favorit light", serif;
+            letter-spacing: 10px;
+            text-align: center;
+            margin-bottom: 3%
+        }
+
+        form[_ngcontent-sc22] input[_ngcontent-sc22]::-moz-placeholder {
+            color: #ddd;
+            opacity: 1
+        }
+
+        form[_ngcontent-sc22] input[_ngcontent-sc22]::placeholder {
+            color: #ddd;
+            opacity: 1
+        }
+
+        form[_ngcontent-sc22] input[_ngcontent-sc22]:-ms-input-placeholder {
+            color: #ddd
+        }
+
+        form[_ngcontent-sc22] input[_ngcontent-sc22]::-ms-input-placeholder {
+            color: #ddd
+        }
+
+        h3[_ngcontent-sc22] {
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: "Favorit light", serif;
+            letter-spacing: 5px;
+            text-align: center;
+            margin: 10px 0
+        }
+
+        #footer[_ngcontent-sc22] h2[_ngcontent-sc22] span[_ngcontent-sc22],
+        h3[_ngcontent-sc22] span[_ngcontent-sc22] {
+            display: block
+        }
+
+        .footerContent[_ngcontent-sc22] {
+            position: absolute;
+            width: 100%;
+            bottom: 0
+        }
+
+        .gradient[_ngcontent-sc22] {
+            display: none;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(180deg, #020024 0, rgba(9, 9, 121, 0) 0, #0e1034 80%)
+        }
+
+        #footer[_ngcontent-sc22] .form-group[_ngcontent-sc22] {
+            margin-bottom: 10px
+        }
+
+        #footer[_ngcontent-sc22] h4[_ngcontent-sc22] {
+            font-size: 22px;
+            color: #fff;
+            margin-bottom: 15px;
+            font-weight: 600
+        }
+
+        #footer[_ngcontent-sc22] ul[_ngcontent-sc22] {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none
+        }
+
+        #footer[_ngcontent-sc22] ul[_ngcontent-sc22] li[_ngcontent-sc22] {
+            display: block;
+            padding: 5px 0
+        }
+
+        #footer[_ngcontent-sc22] ul[_ngcontent-sc22] li[_ngcontent-sc22] a[_ngcontent-sc22] {
+            color: #fff
+        }
+
+        #footer[_ngcontent-sc22] form[_ngcontent-sc22] input[_ngcontent-sc22] {
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid #ddd;
+            padding: 5px 0;
+            outline: 0;
+            box-shadow: none;
+            color: #fff
+        }
+
+        #footer[_ngcontent-sc22] form[_ngcontent-sc22] .btn-schedule[_ngcontent-sc22] {
+            display: block;
+            margin-top: 15px;
+            padding: 7px 15px;
+            width: 100%;
+            font-weight: 600;
+            text-align: center;
+            color: #fff;
+            background-color: #ff5b63;
+            border: 0;
+            border-bottom: 4px solid #f33f48
+        }
+
+        @media screen and (max-width:960px) {
+            #footer[_ngcontent-sc22] h4[_ngcontent-sc22] {
+                font-size: 15px;
+                color: #fff;
+                margin-bottom: 9px;
+                font-weight: 600
+            }
+
+            #footer[_ngcontent-sc22] ul[_ngcontent-sc22] li[_ngcontent-sc22] {
+                display: block;
+                padding: 0
+            }
+
+            #footer[_ngcontent-sc22] ul[_ngcontent-sc22] li[_ngcontent-sc22] a[_ngcontent-sc22] {
+                color: #fff;
+                font-size: 12px
+            }
+
+            #footer[_ngcontent-sc22] form[_ngcontent-sc22] input[_ngcontent-sc22] {
+                width: 100%;
+                font-size: 12px
+            }
+
+            #footer[_ngcontent-sc22] form[_ngcontent-sc22] .btn-schedule[_ngcontent-sc22] {
+                margin-top: 10px;
+                padding: 5px 15px;
+                font-size: 12px;
+                width: 150px
+            }
+        }
+
+        @media screen and (max-width:850px) and (min-width:700px) and (min-height:300px) and (max-height:500px) {
+            #footer[_ngcontent-sc22] h4[_ngcontent-sc22] {
+                margin-bottom: 5px;
+                margin-top: 10px
+            }
+
+            #footer[_ngcontent-sc22] ul[_ngcontent-sc22] li[_ngcontent-sc22] {
+                line-height: 14px
+            }
+
+            #footer[_ngcontent-sc22] ul[_ngcontent-sc22] li[_ngcontent-sc22] a[_ngcontent-sc22] {
+                color: #fff;
+                font-size: 10px
+            }
+
+            #footer[_ngcontent-sc22] form[_ngcontent-sc22] input[_ngcontent-sc22] {
+                font-size: 10px;
+                padding: 1px 0
+            }
+
+            #footer[_ngcontent-sc22] .form-group[_ngcontent-sc22] {
+                margin-bottom: 3px
+            }
+
+            #footer[_ngcontent-sc22] .form-error[_ngcontent-sc22] {
+                font-size: 10px
+            }
+        }
+
+        @media screen and (max-width:690px) and (min-width:550px) and (min-height:300px) and (max-height:500px) {
+            #footer[_ngcontent-sc22] h4[_ngcontent-sc22] {
+                margin-top: 10px !important
+            }
+
+            #footer[_ngcontent-sc22] .col-sm-6[_ngcontent-sc22] {
+                flex: 0 0 50%;
+                max-width: 25%
+            }
+
+            #footer[_ngcontent-sc22] form[_ngcontent-sc22] .btn-schedule[_ngcontent-sc22] {
+                width: 100% !important
+            }
+
+            #footer[_ngcontent-sc22] ul[_ngcontent-sc22] li[_ngcontent-sc22] {
+                line-height: 14px
+            }
+
+            #footer[_ngcontent-sc22] ul[_ngcontent-sc22] li[_ngcontent-sc22] a[_ngcontent-sc22] {
+                color: #fff;
+                font-size: 10px
+            }
+
+            #footer[_ngcontent-sc22] .form-error[_ngcontent-sc22] {
+                font-size: 10px
+            }
+        }
+
+        @media screen and (max-width:580px) and (min-width:540px) and (min-height:300px) and (max-height:500px) {
+            #footer[_ngcontent-sc22] h4[_ngcontent-sc22] {
+                font-size: 13px
+            }
+
+            #footer[_ngcontent-sc22] .form-group[_ngcontent-sc22] {
+                margin-bottom: 3px
+            }
+
+            #footer[_ngcontent-sc22] form[_ngcontent-sc22] input[_ngcontent-sc22] {
+                font-size: 10px
+            }
+
+            #footer[_ngcontent-sc22] .form-error[_ngcontent-sc22] {
+                font-size: 9px
+            }
+        }
+
+        @media screen and (min-width:701px) {
+            .hideFooterDesktop[_ngcontent-sc22] {
+                display: none
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            .card-body[_ngcontent-sc22] {
+                padding: 0 0 10px 15px
+            }
+
+            .card-header[_ngcontent-sc22] {
+                padding: 0;
+                border: 0;
+                background: 0 0
+            }
+
+            .card[_ngcontent-sc22] {
+                box-shadow: none;
+                border: 0;
+                background: 0 0
+            }
+
+            .btn-link[_ngcontent-sc22] {
+                font-size: 15px;
+                color: #fff;
+                margin-bottom: 5px;
+                font-weight: 600;
+                padding: 0;
+                display: block;
+                width: 100%;
+                text-align: left
+            }
+
+            .hideFooterMobile[_ngcontent-sc22] {
+                display: none
+            }
+
+            #footer[_ngcontent-sc22] h2[_ngcontent-sc22] {
+                color: #fff;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-family: "Favorit light", serif;
+                letter-spacing: 5px;
+                text-align: center;
+                margin-bottom: 5%
+            }
+
+            .logo[_ngcontent-sc22] h2[_ngcontent-sc22] {
+                font-size: 15px;
+                padding: 0 15px
+            }
+
+            h3[_ngcontent-sc22] {
+                font-size: 12px;
+                padding: 0 15px;
+                margin: 5px 0
+            }
+
+            #footer[_ngcontent-sc22] h4[_ngcontent-sc22] {
+                margin-top: 20px
+            }
+
+            #footer[_ngcontent-sc22] ul[_ngcontent-sc22] li[_ngcontent-sc22] {
+                display: block;
+                padding: 0;
+                line-height: 18px
+            }
+
+            .card-header[_ngcontent-sc22] h5[_ngcontent-sc22] button[_ngcontent-sc22]:after {
+                font-family: FontAwesome, serif;
+                content: "+";
+                float: right;
+                color: #fff
+            }
+
+            .card-header.collapsed[_ngcontent-sc22] h5[_ngcontent-sc22] button[_ngcontent-sc22]:after {
+                content: "-";
+                color: #fff
+            }
+        }
+
+        @media screen and (max-width:420px) and (min-width:400px) {
+            .btn-link[_ngcontent-sc22] {
+                font-size: 18px
+            }
+
+            #footer[_ngcontent-sc22] ul[_ngcontent-sc22] li[_ngcontent-sc22] a[_ngcontent-sc22] {
+                color: #fff;
+                font-size: 14px
+            }
+
+            #footer[_ngcontent-sc22] ul[_ngcontent-sc22] li[_ngcontent-sc22] {
+                color: #fff;
+                font-size: 24px
+            }
+
+            #footer[_ngcontent-sc22] h4[_ngcontent-sc22] {
+                font-size: 18px
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            #footer[_ngcontent-sc22] form[_ngcontent-sc22] .btn-schedule[_ngcontent-sc22] {
+                margin-top: 10px;
+                padding: 5px 15px;
+                font-size: 12px;
+                width: 100%
+            }
+        }
+    </style>
+    <style ng-transition="serverApp">
+        .footerImage[_ngcontent-sc25] {
+            background-image: url(parallax_background.jpg);
+            background-size: cover;
+            position: relative;
+            background-repeat: no-repeat;
+            height: 350px
+        }
+
+        #footer[_ngcontent-sc25] {
+            background: #0e1034;
+            padding: 0 3% 10px
+        }
+
+        .footerContent[_ngcontent-sc25] {
+            width: 100%
+        }
+
+        #footer[_ngcontent-sc25] .form-group[_ngcontent-sc25] {
+            margin-bottom: 10px
+        }
+
+        #footer[_ngcontent-sc25] .newFooter[_ngcontent-sc25] li[_ngcontent-sc25] {
+            display: block;
+            padding: 5px 0;
+            line-height: 14px
+        }
+
+        #footer[_ngcontent-sc25] h4[_ngcontent-sc25] {
+            font-size: 22px;
+            color: #fff;
+            margin-bottom: 15px;
+            font-weight: 600
+        }
+
+        #footer[_ngcontent-sc25] ul[_ngcontent-sc25] {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none
+        }
+
+        #footer[_ngcontent-sc25] ul[_ngcontent-sc25] li[_ngcontent-sc25] {
+            display: block;
+            padding: 5px 0
+        }
+
+        #footer[_ngcontent-sc25] ul[_ngcontent-sc25] li[_ngcontent-sc25] a[_ngcontent-sc25] {
+            color: #fff
+        }
+
+        #footer[_ngcontent-sc25] form[_ngcontent-sc25] input[_ngcontent-sc25] {
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid #ddd;
+            padding: 5px 0;
+            outline: 0;
+            box-shadow: none;
+            color: #fff
+        }
+
+        #footer[_ngcontent-sc25] form[_ngcontent-sc25] .btn-schedule[_ngcontent-sc25] {
+            display: block;
+            margin-top: 15px;
+            padding: 7px 15px;
+            width: 100%;
+            font-weight: 600;
+            text-align: center;
+            color: #fff;
+            background-color: #ff5b63;
+            border: 0;
+            border-bottom: 4px solid #f33f48
+        }
+
+        #footer[_ngcontent-sc25] h2[_ngcontent-sc25] {
+            color: #fff;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: "Favorit light", serif;
+            letter-spacing: 10px;
+            text-align: center;
+            margin-bottom: 3%
+        }
+
+        h3[_ngcontent-sc25] {
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: "Favorit light", serif;
+            letter-spacing: 5px;
+            text-align: center;
+            margin: 10px 0
+        }
+
+        #footer[_ngcontent-sc25] h2[_ngcontent-sc25] span[_ngcontent-sc25],
+        h3[_ngcontent-sc25] span[_ngcontent-sc25] {
+            display: block
+        }
+
+        @media screen and (max-width:960px) {
+            #footer[_ngcontent-sc25] h4[_ngcontent-sc25] {
+                font-size: 15px;
+                color: #fff;
+                margin-bottom: 9px;
+                font-weight: 600
+            }
+
+            #footer[_ngcontent-sc25] ul[_ngcontent-sc25] li[_ngcontent-sc25] {
+                display: block;
+                padding: 0
+            }
+
+            #footer[_ngcontent-sc25] ul[_ngcontent-sc25] li[_ngcontent-sc25] a[_ngcontent-sc25] {
+                color: #fff;
+                font-size: 12px
+            }
+
+            #footer[_ngcontent-sc25] form[_ngcontent-sc25] input[_ngcontent-sc25] {
+                width: 100%;
+                font-size: 12px
+            }
+
+            #footer[_ngcontent-sc25] form[_ngcontent-sc25] .btn-schedule[_ngcontent-sc25] {
+                margin-top: 10px;
+                padding: 5px 15px;
+                font-size: 12px;
+                width: 150px
+            }
+        }
+
+        @media screen and (max-width:750px) and (min-width:550px) and (min-height:300px) and (max-height:500px) {
+            .footerImage[_ngcontent-sc25] {
+                height: 500px
+            }
+
+            #footer[_ngcontent-sc25] h4[_ngcontent-sc25] {
+                margin-top: 15px
+            }
+        }
+
+        @media screen and (min-width:701px) {
+            .hideFooterDesktop[_ngcontent-sc25] {
+                display: none
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            form[_ngcontent-sc25] input[_ngcontent-sc25]::-moz-placeholder {
+                color: #ddd;
+                opacity: 1
+            }
+
+            form[_ngcontent-sc25] input[_ngcontent-sc25]::placeholder {
+                color: #ddd;
+                opacity: 1
+            }
+
+            form[_ngcontent-sc25] input[_ngcontent-sc25]:-ms-input-placeholder {
+                color: #ddd
+            }
+
+            form[_ngcontent-sc25] input[_ngcontent-sc25]::-ms-input-placeholder {
+                color: #ddd
+            }
+
+            .card-body[_ngcontent-sc25] {
+                padding: 0 0 10px 15px
+            }
+
+            .card-header[_ngcontent-sc25] {
+                padding: 0;
+                border: 0;
+                background: 0 0
+            }
+
+            .card[_ngcontent-sc25] {
+                box-shadow: none;
+                border: 0;
+                background: 0 0
+            }
+
+            .btn-link[_ngcontent-sc25] {
+                font-size: 15px;
+                color: #fff;
+                margin-bottom: 5px;
+                font-weight: 600;
+                padding: 0;
+                display: block;
+                width: 100%;
+                text-align: left
+            }
+
+            .hideFooterMobile[_ngcontent-sc25] {
+                display: none
+            }
+
+            #footer[_ngcontent-sc25] h2[_ngcontent-sc25] {
+                color: #fff;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-family: "Favorit light", serif;
+                letter-spacing: 5px;
+                text-align: center;
+                margin-bottom: 5%
+            }
+
+            .logo[_ngcontent-sc25] h2[_ngcontent-sc25] {
+                font-size: 15px;
+                padding: 0 15px
+            }
+
+            h3[_ngcontent-sc25] {
+                font-size: 12px;
+                padding: 0 15px;
+                margin: 5px 0
+            }
+
+            #footer[_ngcontent-sc25] h4[_ngcontent-sc25] {
+                margin-top: 20px
+            }
+
+            .card-header[_ngcontent-sc25] h5[_ngcontent-sc25] button[_ngcontent-sc25]:after {
+                font-family: FontAwesome, serif;
+                content: "+";
+                float: right;
+                color: #fff
+            }
+
+            .card-header.collapsed[_ngcontent-sc25] h5[_ngcontent-sc25] button[_ngcontent-sc25]:after {
+                content: "-";
+                color: #fff
+            }
+        }
+
+        @media screen and (max-width:420px) and (min-width:400px) {
+            .btn-link[_ngcontent-sc25] {
+                font-size: 18px
+            }
+
+            #footer[_ngcontent-sc25] ul[_ngcontent-sc25] li[_ngcontent-sc25] a[_ngcontent-sc25] {
+                color: #fff;
+                font-size: 14px
+            }
+
+            #footer[_ngcontent-sc25] ul[_ngcontent-sc25] li[_ngcontent-sc25] {
+                color: #fff;
+                font-size: 24px
+            }
+
+            #footer[_ngcontent-sc25] h4[_ngcontent-sc25] {
+                font-size: 18px
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            #footer[_ngcontent-sc25] form[_ngcontent-sc25] .btn-schedule[_ngcontent-sc25] {
+                margin-top: 10px;
+                padding: 5px 15px;
+                font-size: 12px;
+                width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596FGPJ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <app-root _nghost-sc0="" ng-version="8.2.9"><router-outlet _ngcontent-sc0=""></router-outlet><app-main
+            _nghost-sc1=""><app-header _ngcontent-sc1="" _nghost-sc2="">
+                <div _ngcontent-sc2="" id="my-header">
+                    <div _ngcontent-sc2="" class="header-desktop">
+                        <div _ngcontent-sc2="" class="col-5 header-entry-group">
+                            <div _ngcontent-sc2="" class="header-entry"><a _ngcontent-sc2="" routerlink="/our-why"
+                                    routerlinkactive="active">Our Why</a></div>
+                            <div _ngcontent-sc2="" class="header-entry"><a _ngcontent-sc2="" routerlink="/the-process"
+                                    routerlinkactive="active">The Process</a></div>
+                            <div _ngcontent-sc2="" class="header-entry"><a _ngcontent-sc2="" routerlink="/services"
+                                    routerlinkactive="active">Services</a></div>
+                        </div>
+                        <div _ngcontent-sc2="" class="offset-2 col-5 header-entry-group">
+                            <div _ngcontent-sc2="" class="header-entry"><a _ngcontent-sc2=""
+                                    routerlink="/success-stories" routerlinkactive="active">Success Stories</a></div>
+                            <div _ngcontent-sc2="" class="header-entry"><a _ngcontent-sc2=""
+                                    href="https://designli.co/blog/">Blog</a></div>
+                            <div _ngcontent-sc2="" class="header-entry"><a _ngcontent-sc2="" class="schedule"
+                                    href="https://campaign.designli.co/schedule-a-consultation"><span
+                                        _ngcontent-sc2="">Schedule a</span><span _ngcontent-sc2="">
+                                        consultation</span></a></div>
+                        </div>
+                    </div>
+                    <div _ngcontent-sc2="" class="header-mobile">
+                        <div _ngcontent-sc2="" class="row">
+                            <div _ngcontent-sc2="" class="col-sm-6 col-6"><a _ngcontent-sc2="" href="/"><img
+                                        _ngcontent-sc2="" class="logoMobile"
+                                        src="./assets/images/images/linear_logo.png"></a></div>
+                            <div _ngcontent-sc2="" class="col-sm-6 col-6"><img _ngcontent-sc2="" class="menuIcon"
+                                    src="./assets/images/ic_menu.png"></div>
+                        </div>
+                    </div>
+                </div><!---->
+            </app-header><router-outlet _ngcontent-sc1="" class=""></router-outlet><app-services _nghost-sc26="">
+                <div _ngcontent-sc26="" class="smallLogo" id="smallLogo" style="display:block;"><a _ngcontent-sc26=""
+                        href="/"><img _ngcontent-sc26="" src="./assets/images/logo-new-footer.svg"></a></div>
+                <div _ngcontent-sc26="" id="backgroundBlack">
+                    <div _ngcontent-sc26="" class="section">
+                        <div _ngcontent-sc26="" class="firstSection">
+                            <div _ngcontent-sc26="" class="content">
+                                <div _ngcontent-sc26="" class="row">
+                                    <div _ngcontent-sc26="" class="col-lg-6 col-md-6 col-sm-6 v-align">
+                                        <div _ngcontent-sc26="" class="text">
+                                            <h1 _ngcontent-sc26=""> Designli is your digital partner. </h1>
+                                            <p _ngcontent-sc26=""> Bring on a team of seasoned experts to define,
+                                                design, build, and maintain your app or custom website. Designli works
+                                                with clients from around the world who are building great businesses
+                                                through technology initiatives. </p>
+                                        </div>
+                                    </div>
+                                    <div _ngcontent-sc26="" class="col-lg-6 col-md-6 col-sm-6 v-align"><img
+                                            _ngcontent-sc26="" src="./assets/images/services/illustration1.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div _ngcontent-sc26="" class="section">
+                        <div _ngcontent-sc26="" class="secondSection">
+                            <div _ngcontent-sc26="" class="content">
+                                <div _ngcontent-sc26="" class="text">
+                                    <h2 _ngcontent-sc26=""> UX and development services for web apps and mobile apps.
+                                    </h2>
+                                    <p _ngcontent-sc26=""> Sometimes founders, IT leaders, and stakeholders need help
+                                        translating the vision into a polished, market-ready product. That’s where we
+                                        come in. </p>
+                                    <p _ngcontent-sc26=""> Our cross-discipline team uses a clear <a _ngcontent-sc26=""
+                                            routerlink="/the-process" href="/the-process">process</a> and <a
+                                            _ngcontent-sc26="" routerlink="/our-why" href="/our-why">vision</a> to bring
+                                        everything together. Our driving focus is setting clear expectations, providing
+                                        top-notch communication, and delivering best-in-class products to our customers
+                                        on time and on budget. With that, we hope to earn the privilege of becoming a
+                                        vital part of your business as a long-term partner. </p>
+                                    <p _ngcontent-sc26=""> This approach is what took us from being the top-rated
+                                        software firm in the Southeast and made us a national leader in the United
+                                        States. Most importantly, it’s what allows our clients to plan the path to
+                                        success and <a _ngcontent-sc26="" routerlink="/success-stories"
+                                            href="/success-stories">achieve better results, faster</a>. </p><img
+                                        _ngcontent-sc26="" class="segmentImage prototype"
+                                        src="./assets/images/services/illustration.png">
+                                    <p _ngcontent-sc26=""> For mobile app projects, we're equipped with a team of
+                                        cross-platform developers specializing in Google's "Flutter" technology. This
+                                        allows us to build powerful systems that can run on both iPhone and Android
+                                        devices. Flutter can even be extended to the web, drastically reducing software
+                                        development costs (let alone maintenance costs) compared to previous norms. </p>
+                                    <p _ngcontent-sc26=""> When building web apps, we excel at the conceptualization,
+                                        design, and custom feature development for complex web systems like those seen
+                                        in our <a _ngcontent-sc26="" routerlink="/success-stories"
+                                            href="/success-stories">portfolio</a>. We utilize Angular, React, and
+                                        Node.js as our languages of choice, along with infrastructure built on
+                                        industry-leading Amazon Web Services. We also work with numerous 3rd party
+                                        frameworks to suit your business whether that’s mapping, analytics toolkits, or
+                                        big data needs. </p>
+                                </div>
+                                <div _ngcontent-sc26="" class="cards">
+                                    <div _ngcontent-sc26="" class="row">
+                                        <div _ngcontent-sc26="" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div _ngcontent-sc26="" class="devCard mov">
+                                                <div _ngcontent-sc26="" class="posRel">
+                                                    <h2 _ngcontent-sc26=""> UX/UI design. </h2>
+                                                    <ul _ngcontent-sc26="">
+                                                        <li _ngcontent-sc26="">UX Design</li>
+                                                        <li _ngcontent-sc26="">User Flow Diagrams</li>
+                                                        <li _ngcontent-sc26="">UI Design</li>
+                                                        <li _ngcontent-sc26="">App and Web Prototyping (Figma)t</li>
+                                                    </ul><a _ngcontent-sc26="" class="btn btn-learn"
+                                                        routerlink="/services/ux-ui-design"
+                                                        href="/services/ux-ui-design">Learn More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div _ngcontent-sc26="" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div _ngcontent-sc26="" class="devCard blue">
+                                                <div _ngcontent-sc26="" class="posRel">
+                                                    <h2 _ngcontent-sc26=""> On-demand product teams. </h2>
+                                                    <ul _ngcontent-sc26="">
+                                                        <li _ngcontent-sc26="">Enterprise Software Development</li>
+                                                        <li _ngcontent-sc26="">Extension of Your Internal Team</li>
+                                                        <li _ngcontent-sc26="">Dedicated Developers Plus Product Owners
+                                                        </li>
+                                                        <li _ngcontent-sc26="">Rapid Scaling</li>
+                                                    </ul><a _ngcontent-sc26="" class="btn btn-learn"
+                                                        routerlink="/services/development-on-demand"
+                                                        href="/services/development-on-demand">Learn More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div _ngcontent-sc26="" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div _ngcontent-sc26="" class="devCard blue">
+                                                <div _ngcontent-sc26="" class="posRel">
+                                                    <h2 _ngcontent-sc26=""> Mobile app development. </h2>
+                                                    <ul _ngcontent-sc26="">
+                                                        <li _ngcontent-sc26="">iOS App Development</li>
+                                                        <li _ngcontent-sc26="">Android App Development</li>
+                                                        <li _ngcontent-sc26="">Cross-Platform Flutter App Development
+                                                        </li>
+                                                        <li _ngcontent-sc26="">Enterprise Mobile App Development</li>
+                                                    </ul><a _ngcontent-sc26="" class="btn btn-learn"
+                                                        routerlink="/services/mobile-app-development"
+                                                        href="/services/mobile-app-development">Learn More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div _ngcontent-sc26="" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div _ngcontent-sc26="" class="devCard mov">
+                                                <div _ngcontent-sc26="" class="posRel">
+                                                    <h2 _ngcontent-sc26=""> Web development. </h2>
+                                                    <ul _ngcontent-sc26="">
+                                                        <li _ngcontent-sc26="">Website Design and Development</li>
+                                                        <li _ngcontent-sc26="">Web Application Development</li>
+                                                        <li _ngcontent-sc26="">Custom Software Development</li>
+                                                        <li _ngcontent-sc26="">Web Portal Development</li>
+                                                    </ul><a _ngcontent-sc26="" class="btn btn-learn"
+                                                        routerlink="/services/web-development"
+                                                        href="/services/web-development">Learn More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div _ngcontent-sc26="" class="section switchParallax">
+                        <div _ngcontent-sc26="" class="fifthSection">
+                            <div _ngcontent-sc26="" class="content">
+                                <h2 _ngcontent-sc26=""> Let's build together. </h2>
+                                <p _ngcontent-sc26=""> We'd love to hear about your product or idea. </p><a
+                                    _ngcontent-sc26="" class="btn btn-build hvr-shadow hvr-grow-shadow"
+                                    routerlink="/get-in-touch" href="/get-in-touch"> Get in touch </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div _ngcontent-sc26="" class="switchParallax section footerDesktop">
+                        <div _ngcontent-sc26="" class="seventhSection"><img _ngcontent-sc26="" alt="" class="firstImage"
+                                src="./assets/images/images/parallax_top.png" style="width:100%"><app-footer
+                                _ngcontent-sc26="" class="whyFooter" _nghost-sc22="">
+                                <div _ngcontent-sc22="" class="footerContent">
+                                    <div _ngcontent-sc22="" class="gradient"></div>
+                                    <div _ngcontent-sc22="" id="footer">
+                                        <div _ngcontent-sc22="" class="newFooter hideFooterDesktop">
+                                            <div _ngcontent-sc22="" class="row">
+                                                <div _ngcontent-sc22="" class="col-lg-12">
+                                                    <div _ngcontent-sc22="" id="accordion">
+                                                        <div _ngcontent-sc22="" class="card">
+                                                            <div _ngcontent-sc22="" class="card-header" id="headingOne">
+                                                                <h5 _ngcontent-sc22="" class="mb-0"><button
+                                                                        _ngcontent-sc22="" aria-controls="collapseOne"
+                                                                        aria-expanded="true" class="btn btn-link"
+                                                                        data-target="#collapseOne"
+                                                                        data-toggle="collapse"> More information
+                                                                    </button></h5>
+                                                            </div>
+                                                            <div _ngcontent-sc22="" aria-labelledby="headingOne"
+                                                                class="collapse" data-parent="#accordion"
+                                                                id="collapseOne">
+                                                                <div _ngcontent-sc22="" class="card-body">
+                                                                    <ul _ngcontent-sc22="" class="list">
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                routerlink="/get-in-touch">Contact
+                                                                                Us</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                routerlink="/services">Our Services</a>
+                                                                        </li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                routerlink="/services/mobile-app-development">Mobile
+                                                                                App Development</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                routerlink="/services/web-development">Web
+                                                                                Development</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                routerlink="/services/ux-ui-design">UX /
+                                                                                UI Design</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                routerlink="/services/development-on-demand">On-Demand
+                                                                                Product Team</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div _ngcontent-sc22="" class="card">
+                                                            <div _ngcontent-sc22="" class="card-header" id="headingTwo">
+                                                                <h5 _ngcontent-sc22="" class="mb-0"><button
+                                                                        _ngcontent-sc22="" aria-controls="collapseTwo"
+                                                                        aria-expanded="false"
+                                                                        class="btn btn-link collapsed"
+                                                                        data-target="#collapseTwo"
+                                                                        data-toggle="collapse"> Discover </button></h5>
+                                                            </div>
+                                                            <div _ngcontent-sc22="" aria-labelledby="headingTwo"
+                                                                class="collapse" data-parent="#accordion"
+                                                                id="collapseTwo">
+                                                                <div _ngcontent-sc22="" class="card-body">
+                                                                    <ul _ngcontent-sc22="" class="list">
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                routerlink="/success-stories">Our
+                                                                                Work</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                routerlink="/the-process">Our
+                                                                                Process</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                routerlink="/our-why">About Us</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                href="https://designli.co/blog/">Blog</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div _ngcontent-sc22="" class="card">
+                                                            <div _ngcontent-sc22="" class="card-header"
+                                                                id="headingThree">
+                                                                <h5 _ngcontent-sc22="" class="mb-0"><button
+                                                                        _ngcontent-sc22="" aria-controls="collapseThree"
+                                                                        aria-expanded="false"
+                                                                        class="btn btn-link collapsed"
+                                                                        data-target="#collapseThree"
+                                                                        data-toggle="collapse"> Follow </button></h5>
+                                                            </div>
+                                                            <div _ngcontent-sc22="" aria-labelledby="headingThree"
+                                                                class="collapse" data-parent="#accordion"
+                                                                id="collapseThree">
+                                                                <div _ngcontent-sc22="" class="card-body">
+                                                                    <ul _ngcontent-sc22="" class="list">
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                href="https://www.facebook.com/designli"
+                                                                                target="_blank">Facebook</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                href="https://twitter.com/designlico"
+                                                                                target="_blank">Twitter</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                href="https://www.linkedin.com/company/designli"
+                                                                                target="_blank">LinkedIn</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                href="https://www.instagram.com/designlico/"
+                                                                                target="_blank">Instagram</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div _ngcontent-sc22="" class="card">
+                                                            <div _ngcontent-sc22="" class="card-header"
+                                                                id="headingFour">
+                                                                <h5 _ngcontent-sc22="" class="mb-0"><button
+                                                                        _ngcontent-sc22="" aria-controls="collapseFour"
+                                                                        aria-expanded="false"
+                                                                        class="btn btn-link collapsed"
+                                                                        data-target="#collapseFour"
+                                                                        data-toggle="collapse"> Designli for Enterprises
+                                                                    </button></h5>
+                                                            </div>
+                                                            <div _ngcontent-sc22="" aria-labelledby="headingFour"
+                                                                class="collapse" data-parent="#accordion"
+                                                                id="collapseFour">
+                                                                <div _ngcontent-sc22="" class="card-body">
+                                                                    <ul _ngcontent-sc22="" class="list">
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                routerlink="/stories/national-trench-safety">Tapping
+                                                                                into Talent for National Trench
+                                                                                Safety</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                href="https://designli.co/blog/what-is-an-enterprise-app-10-examples/">Top
+                                                                                10 Enterprise App Examples</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                href="https://designli.co/blog/behavioral-design-is-the-future-of-ux">Behavioral
+                                                                                Design and the Future of UX</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                href="https://designli.co/blog/how-to-build-user-personas-to-guide-product-development/">Guiding
+                                                                                Product Development With User
+                                                                                Personas</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div _ngcontent-sc22="" class="card">
+                                                            <div _ngcontent-sc22="" class="card-header"
+                                                                id="headingFive">
+                                                                <h5 _ngcontent-sc22="" class="mb-0"><button
+                                                                        _ngcontent-sc22="" aria-controls="collapseFive"
+                                                                        aria-expanded="false"
+                                                                        class="btn btn-link collapsed"
+                                                                        data-target="#collapseFive"
+                                                                        data-toggle="collapse"> Designli for Startups
+                                                                    </button></h5>
+                                                            </div>
+                                                            <div _ngcontent-sc22="" aria-labelledby="headingFive"
+                                                                class="collapse" data-parent="#accordion"
+                                                                id="collapseFive">
+                                                                <div _ngcontent-sc22="" class="card-body">
+                                                                    <ul _ngcontent-sc22="" class="list">
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                routerlink="/stories/true-load-time">From
+                                                                                Vision to Version 1 with True Load
+                                                                                Time</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                routerlink="/stories/secur-space">Scaling
+                                                                                Secur.Space</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                href="https://designli.co/blog/user-flow-for-app-development-a-beginners-guide">Beginner’s
+                                                                                Guide to User Flow for App
+                                                                                Development</a></li>
+                                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                                href="https://designli.co/blog/5-steps-proof-concept-successful-software-development">Creating
+                                                                                a Proof of Concept in 5 Steps</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div _ngcontent-sc22="" class="col-lg-12">
+                                                    <h4 _ngcontent-sc22=""> Let's chat about your project </h4>
+                                                    <form _ngcontent-sc22="" autocomplete="off" novalidate="">
+                                                        <div _ngcontent-sc22="" class="form-group"><input
+                                                                _ngcontent-sc22="" formcontrolname="name"
+                                                                placeholder="First name" type="text"><!----></div>
+                                                        <div _ngcontent-sc22="" class="form-group"><input
+                                                                _ngcontent-sc22="" formcontrolname="lastname"
+                                                                placeholder="Last name" type="text"><!----></div>
+                                                        <div _ngcontent-sc22="" class="form-group"><input
+                                                                _ngcontent-sc22="" email="" formcontrolname="email"
+                                                                placeholder="Email" type="text"><!----></div>
+                                                        <div _ngcontent-sc22="" class="form-group"><input
+                                                                _ngcontent-sc22="" formcontrolname="mobilephone"
+                                                                placeholder="Mobile Phone" type="text"><!----></div>
+                                                        <div _ngcontent-sc22="" class="form-group"><button
+                                                                _ngcontent-sc22="" class="btn-schedule"> Schedule a call
+                                                            </button></div>
+                                                    </form>
+                                                </div>
+                                                <div _ngcontent-sc22="" class="col-lg-12">
+                                                    <h3 _ngcontent-sc22=""><span _ngcontent-sc22="">© 2023 Designli,
+                                                            LLC. 141 Traction St Greenville, SC 29611</span></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div _ngcontent-sc22="" class="row hideFooterMobile">
+                                            <div _ngcontent-sc22="" class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                                <h4 _ngcontent-sc22=""> More information </h4>
+                                                <ul _ngcontent-sc22="" class="list">
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            routerlink="/get-in-touch">Contact Us</a></li>
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            routerlink="/services">Our Services</a></li>
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            routerlink="/services/mobile-app-development">Mobile App
+                                                            Development</a></li>
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            routerlink="/services/web-development">Web Development</a>
+                                                    </li>
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            routerlink="/services/ux-ui-design">UX / UI Design</a></li>
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            routerlink="/services/development-on-demand">On-Demand
+                                                            Product Team</a></li>
+                                                </ul>
+                                            </div>
+                                            <div _ngcontent-sc22="" class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                                <h4 _ngcontent-sc22=""> Discover </h4>
+                                                <ul _ngcontent-sc22="" class="list">
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            routerlink="/success-stories">Our Work</a></li>
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            routerlink="/the-process">Our Process</a></li>
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            routerlink="/our-why">About Us</a></li>
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            href="https://designli.co/blog/">Blog</a></li>
+                                                </ul>
+                                            </div>
+                                            <div _ngcontent-sc22="" class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                                <h4 _ngcontent-sc22=""> Follow </h4>
+                                                <ul _ngcontent-sc22="" class="list">
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            href="https://www.facebook.com/designli"
+                                                            target="_blank">Facebook</a></li>
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            href="https://twitter.com/designlico"
+                                                            target="_blank">Twitter</a></li>
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            href="https://www.linkedin.com/company/designli"
+                                                            target="_blank">LinkedIn</a></li>
+                                                    <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                            href="https://www.instagram.com/designlico/"
+                                                            target="_blank">Instagram</a></li>
+                                                </ul>
+                                            </div>
+                                            <div _ngcontent-sc22="" class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                                <h4 _ngcontent-sc22=""> Let's chat about your project </h4>
+                                                <form _ngcontent-sc22="" autocomplete="off" novalidate="">
+                                                    <div _ngcontent-sc22="" class="form-group"><input _ngcontent-sc22=""
+                                                            formcontrolname="name" placeholder="First name"
+                                                            type="text"><!----></div>
+                                                    <div _ngcontent-sc22="" class="form-group"><input _ngcontent-sc22=""
+                                                            formcontrolname="lastname" placeholder="Last name"
+                                                            type="text"><!----></div>
+                                                    <div _ngcontent-sc22="" class="form-group"><input _ngcontent-sc22=""
+                                                            email="" formcontrolname="email" placeholder="Email"
+                                                            type="text"><!----></div>
+                                                    <div _ngcontent-sc22="" class="form-group"><input _ngcontent-sc22=""
+                                                            formcontrolname="mobilephone" placeholder="Mobile Phone"
+                                                            type="text"><!----></div>
+                                                    <div _ngcontent-sc22="" class="form-group"><button
+                                                            _ngcontent-sc22="" class="btn-schedule"> Schedule a call
+                                                        </button></div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div _ngcontent-sc22="" class="newFooter hideFooterMobile">
+                                            <hr _ngcontent-sc22="">
+                                            <div _ngcontent-sc22="" class="row">
+                                                <div _ngcontent-sc22="" class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                    <h4 _ngcontent-sc22=""> Designli for Enterprises </h4>
+                                                    <ul _ngcontent-sc22="" class="list">
+                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                routerlink="/stories/national-trench-safety">Tapping
+                                                                into Talent for National Trench Safety</a></li>
+                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                href="https://designli.co/blog/what-is-an-enterprise-app-10-examples/">Top
+                                                                10 Enterprise App Examples</a></li>
+                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                href="https://designli.co/blog/behavioral-design-is-the-future-of-ux">Behavioral
+                                                                Design and the Future of UX</a></li>
+                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                href="https://designli.co/blog/how-to-build-user-personas-to-guide-product-development/">Guiding
+                                                                Product Development With User Personas</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div _ngcontent-sc22="" class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                    <h4 _ngcontent-sc22=""> Designli for Startups </h4>
+                                                    <ul _ngcontent-sc22="" class="list">
+                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                routerlink="/stories/true-load-time">From Vision to
+                                                                Version 1 with True Load Time</a></li>
+                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                routerlink="/stories/secur-space">Scaling
+                                                                Secur.Space</a></li>
+                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                href="https://designli.co/blog/user-flow-for-app-development-a-beginners-guide">Beginner’s
+                                                                Guide to User Flow for App Development</a></li>
+                                                        <li _ngcontent-sc22=""><a _ngcontent-sc22=""
+                                                                href="https://designli.co/blog/5-steps-proof-concept-successful-software-development">Creating
+                                                                a Proof of Concept in 5 Steps</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <hr _ngcontent-sc22="">
+                                            <div _ngcontent-sc22="" class="row">
+                                                <div _ngcontent-sc22="" class="col-lg-12">
+                                                    <h3 _ngcontent-sc22=""><span _ngcontent-sc22="">MADE IN GREENVILLE,
+                                                            SC.</span></h3>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-sc22="" class="row">
+                                                <div _ngcontent-sc22="" class="col-lg-12">
+                                                    <h3 _ngcontent-sc22=""><span _ngcontent-sc22="">© 2023 Designli,
+                                                            LLC. 141 Traction St Greenville, SC 29611</span></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </app-footer></div>
+                    </div>
+                    <div _ngcontent-sc26="" class="section footerMobile"><app-second-footer _ngcontent-sc26=""
+                            _nghost-sc25="">
+                            <div _ngcontent-sc25="" class="footerImage"><img _ngcontent-sc25="" alt=""
+                                    class="firstImage" src="./assets/images/images/parallax_top.png" style="width:100%">
+                            </div>
+                            <div _ngcontent-sc25="" class="footerContent">
+                                <div _ngcontent-sc25="" id="footer">
+                                    <div _ngcontent-sc25="" class="newFooter hideFooterDesktop">
+                                        <div _ngcontent-sc25="" class="row">
+                                            <div _ngcontent-sc25="" class="col-lg-12">
+                                                <div _ngcontent-sc25="" id="accordion">
+                                                    <div _ngcontent-sc25="" class="card">
+                                                        <div _ngcontent-sc25="" class="card-header" id="headingOne">
+                                                            <h5 _ngcontent-sc25="" class="mb-0"><button
+                                                                    _ngcontent-sc25="" aria-controls="collapseOne"
+                                                                    aria-expanded="true" class="btn btn-link"
+                                                                    data-target="#collapseOne" data-toggle="collapse">
+                                                                    More information </button></h5>
+                                                        </div>
+                                                        <div _ngcontent-sc25="" aria-labelledby="headingOne"
+                                                            class="collapse" data-parent="#accordion" id="collapseOne">
+                                                            <div _ngcontent-sc25="" class="card-body">
+                                                                <ul _ngcontent-sc25="" class="list">
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            routerlink="/get-in-touch">Contact Us</a>
+                                                                    </li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            routerlink="/services">Our Services</a></li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            routerlink="/services/mobile-app-development">Mobile
+                                                                            App Development</a></li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            routerlink="/services/web-development">Web
+                                                                            Development</a></li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            routerlink="/services/ux-ui-design">UX / UI
+                                                                            Design</a></li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            routerlink="/services/development-on-demand">On-Demand
+                                                                            Product Team</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div _ngcontent-sc25="" class="card">
+                                                        <div _ngcontent-sc25="" class="card-header" id="headingTwo">
+                                                            <h5 _ngcontent-sc25="" class="mb-0"><button
+                                                                    _ngcontent-sc25="" aria-controls="collapseTwo"
+                                                                    aria-expanded="false" class="btn btn-link collapsed"
+                                                                    data-target="#collapseTwo" data-toggle="collapse">
+                                                                    Discover </button></h5>
+                                                        </div>
+                                                        <div _ngcontent-sc25="" aria-labelledby="headingTwo"
+                                                            class="collapse" data-parent="#accordion" id="collapseTwo">
+                                                            <div _ngcontent-sc25="" class="card-body">
+                                                                <ul _ngcontent-sc25="" class="list">
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            routerlink="/success-stories">Our Work</a>
+                                                                    </li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            routerlink="/the-process">Our Process</a>
+                                                                    </li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            routerlink="/our-why">About Us</a></li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            href="https://designli.co/blog/">Blog</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div _ngcontent-sc25="" class="card">
+                                                        <div _ngcontent-sc25="" class="card-header" id="headingThree">
+                                                            <h5 _ngcontent-sc25="" class="mb-0"><button
+                                                                    _ngcontent-sc25="" aria-controls="collapseThree"
+                                                                    aria-expanded="false" class="btn btn-link collapsed"
+                                                                    data-target="#collapseThree" data-toggle="collapse">
+                                                                    Follow </button></h5>
+                                                        </div>
+                                                        <div _ngcontent-sc25="" aria-labelledby="headingThree"
+                                                            class="collapse" data-parent="#accordion"
+                                                            id="collapseThree">
+                                                            <div _ngcontent-sc25="" class="card-body">
+                                                                <ul _ngcontent-sc25="" class="list">
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            href="https://www.facebook.com/designli"
+                                                                            target="_blank">Facebook</a></li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            href="https://twitter.com/designlico"
+                                                                            target="_blank">Twitter</a></li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            href="https://www.linkedin.com/company/designli"
+                                                                            target="_blank">LinkedIn</a></li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            href="https://www.instagram.com/designlico/"
+                                                                            target="_blank">Instagram</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div _ngcontent-sc25="" class="card">
+                                                        <div _ngcontent-sc25="" class="card-header" id="headingFour">
+                                                            <h5 _ngcontent-sc25="" class="mb-0"><button
+                                                                    _ngcontent-sc25="" aria-controls="collapseFour"
+                                                                    aria-expanded="false" class="btn btn-link collapsed"
+                                                                    data-target="#collapseFour" data-toggle="collapse">
+                                                                    Designli for Enterprises </button></h5>
+                                                        </div>
+                                                        <div _ngcontent-sc25="" aria-labelledby="headingFour"
+                                                            class="collapse" data-parent="#accordion" id="collapseFour">
+                                                            <div _ngcontent-sc25="" class="card-body">
+                                                                <ul _ngcontent-sc25="" class="list">
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            routerlink="/stories/national-trench-safety">Tapping
+                                                                            into Talent for National Trench Safety</a>
+                                                                    </li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            href="https://designli.co/blog/what-is-an-enterprise-app-10-examples/">Top
+                                                                            10 Enterprise App Examples</a></li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            href="https://designli.co/blog/behavioral-design-is-the-future-of-ux">Behavioral
+                                                                            Design and the Future of UX</a></li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            href="https://designli.co/blog/how-to-build-user-personas-to-guide-product-development/">Guiding
+                                                                            Product Development With User Personas</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div _ngcontent-sc25="" class="card">
+                                                        <div _ngcontent-sc25="" class="card-header" id="headingFive">
+                                                            <h5 _ngcontent-sc25="" class="mb-0"><button
+                                                                    _ngcontent-sc25="" aria-controls="collapseFive"
+                                                                    aria-expanded="false" class="btn btn-link collapsed"
+                                                                    data-target="#collapseFive" data-toggle="collapse">
+                                                                    Designli for Startups </button></h5>
+                                                        </div>
+                                                        <div _ngcontent-sc25="" aria-labelledby="headingFive"
+                                                            class="collapse" data-parent="#accordion" id="collapseFive">
+                                                            <div _ngcontent-sc25="" class="card-body">
+                                                                <ul _ngcontent-sc25="" class="list">
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            routerlink="/stories/true-load-time">From
+                                                                            Vision to Version 1 with True Load Time</a>
+                                                                    </li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            routerlink="/stories/secur-space">Scaling
+                                                                            Secur.Space</a></li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            href="https://designli.co/blog/user-flow-for-app-development-a-beginners-guide">Beginner’s
+                                                                            Guide to User Flow for App Development</a>
+                                                                    </li>
+                                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                                            href="https://designli.co/blog/5-steps-proof-concept-successful-software-development">Creating
+                                                                            a Proof of Concept in 5 Steps</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div _ngcontent-sc25="" class="col-lg-12">
+                                                <h4 _ngcontent-sc25=""> Let's chat about your project </h4>
+                                                <form _ngcontent-sc25="" autocomplete="off" novalidate="">
+                                                    <div _ngcontent-sc25="" class="form-group"><input _ngcontent-sc25=""
+                                                            formcontrolname="name" placeholder="First name"
+                                                            type="text"><!----></div>
+                                                    <div _ngcontent-sc25="" class="form-group"><input _ngcontent-sc25=""
+                                                            formcontrolname="lastname" placeholder="Last name"
+                                                            type="text"><!----></div>
+                                                    <div _ngcontent-sc25="" class="form-group"><input _ngcontent-sc25=""
+                                                            email="" formcontrolname="email" placeholder="Email"
+                                                            type="text"><!----></div>
+                                                    <div _ngcontent-sc25="" class="form-group"><input _ngcontent-sc25=""
+                                                            formcontrolname="mobilephone" placeholder="Mobile Phone"
+                                                            type="text"><!----></div>
+                                                    <div _ngcontent-sc25="" class="form-group"><button
+                                                            _ngcontent-sc25="" class="btn-schedule"> Schedule a call
+                                                        </button></div>
+                                                </form>
+                                            </div>
+                                            <div _ngcontent-sc25="" class="col-lg-12">
+                                                <h3 _ngcontent-sc25=""><span _ngcontent-sc25="">© 2023 Designli, LLC.
+                                                        141 Traction St Greenville, SC 29611</span></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div _ngcontent-sc25="" class="row hideFooterMobile">
+                                        <div _ngcontent-sc25="" class="col-lg-3 col-md-3 col-sm-12 col-12">
+                                            <h4 _ngcontent-sc25=""> Let's chat about your project </h4>
+                                            <form _ngcontent-sc25="" autocomplete="off" novalidate="">
+                                                <div _ngcontent-sc25="" class="form-group"><input _ngcontent-sc25=""
+                                                        formcontrolname="name" placeholder="First name"
+                                                        type="text"><!----></div>
+                                                <div _ngcontent-sc25="" class="form-group"><input _ngcontent-sc25=""
+                                                        formcontrolname="lastname" placeholder="Last name"
+                                                        type="text"><!----></div>
+                                                <div _ngcontent-sc25="" class="form-group"><input _ngcontent-sc25=""
+                                                        email="" formcontrolname="email" placeholder="Email"
+                                                        type="text"><!----></div>
+                                                <div _ngcontent-sc25="" class="form-group"><input _ngcontent-sc25=""
+                                                        formcontrolname="mobilephone" placeholder="Mobile Phone"
+                                                        type="text"><!----></div>
+                                                <div _ngcontent-sc25="" class="form-group"><button _ngcontent-sc25=""
+                                                        class="btn-schedule"> Schedule a call </button></div>
+                                            </form>
+                                        </div>
+                                        <div _ngcontent-sc25="" class="col-lg-3 col-md-3 col-sm-4 col-6">
+                                            <h4 _ngcontent-sc25=""> More information </h4>
+                                            <ul _ngcontent-sc25="" class="list">
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                        routerlink="/get-in-touch">Contact Us</a></li>
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25="" routerlink="/services">Our
+                                                        Services</a></li>
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                        routerlink="/services/mobile-app-development">Mobile App
+                                                        Development</a></li>
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                        routerlink="/services/web-development">Web Development</a></li>
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                        routerlink="/services/ux-ui-design">UX / UI Design</a></li>
+                                            </ul>
+                                        </div>
+                                        <div _ngcontent-sc25="" class="col-lg-3 col-md-3 col-sm-4 col-6">
+                                            <h4 _ngcontent-sc25=""> Discover </h4>
+                                            <ul _ngcontent-sc25="" class="list">
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                        routerlink="/success-stories">Our Work</a></li>
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                        routerlink="/the-process">Our Process</a></li>
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25="" routerlink="/our-why">About
+                                                        Us</a></li>
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                        href="https://designli.co/blog/">Blog</a></li>
+                                            </ul>
+                                        </div>
+                                        <div _ngcontent-sc25="" class="col-lg-3 col-md-3 col-sm-4 col-6">
+                                            <h4 _ngcontent-sc25=""> Follow </h4>
+                                            <ul _ngcontent-sc25="" class="list">
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                        href="https://www.facebook.com/designli"
+                                                        target="_blank">Facebook</a></li>
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                        href="https://twitter.com/designlico"
+                                                        target="_blank">Twitter</a></li>
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                        href="https://www.linkedin.com/company/designli"
+                                                        target="_blank">LinkedIn</a></li>
+                                                <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                        href="https://www.instagram.com/designlico/"
+                                                        target="_blank">Instagram</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div _ngcontent-sc25="" class="newFooter hideFooterMobile">
+                                        <hr _ngcontent-sc25="">
+                                        <div _ngcontent-sc25="" class="row">
+                                            <div _ngcontent-sc25="" class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                <h4 _ngcontent-sc25=""> Designli for Enterprises </h4>
+                                                <ul _ngcontent-sc25="" class="list">
+                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                            routerlink="/stories/national-trench-safety">Tapping into
+                                                            Talent for National Trench Safety</a></li>
+                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                            href="https://designli.co/blog/what-is-an-enterprise-app-10-examples/">Top
+                                                            10 Enterprise App Examples</a></li>
+                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                            href="https://designli.co/blog/behavioral-design-is-the-future-of-ux">Behavioral
+                                                            Design and the Future of UX</a></li>
+                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                            href="https://designli.co/blog/how-to-build-user-personas-to-guide-product-development/">Guiding
+                                                            Product Development With User Personas</a></li>
+                                                </ul>
+                                            </div>
+                                            <div _ngcontent-sc25="" class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                <h4 _ngcontent-sc25=""> Designli for Startups </h4>
+                                                <ul _ngcontent-sc25="" class="list">
+                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                            routerlink="/stories/true-load-time">From Vision to Version
+                                                            1 with True Load Time</a></li>
+                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                            routerlink="/stories/secur-space">Scaling Secur.Space</a>
+                                                    </li>
+                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                            href="https://designli.co/blog/user-flow-for-app-development-a-beginners-guide">Beginner’s
+                                                            Guide to User Flow for App Development</a></li>
+                                                    <li _ngcontent-sc25=""><a _ngcontent-sc25=""
+                                                            href="https://designli.co/blog/5-steps-proof-concept-successful-software-development">Creating
+                                                            a Proof of Concept in 5 Steps</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <hr _ngcontent-sc25="">
+                                        <div _ngcontent-sc25="" class="row">
+                                            <div _ngcontent-sc25="" class="col-lg-12">
+                                                <h3 _ngcontent-sc25=""><span _ngcontent-sc25="">MADE IN GREENVILLE,
+                                                        SC.</span></h3>
+                                            </div>
+                                        </div>
+                                        <div _ngcontent-sc25="" class="row">
+                                            <div _ngcontent-sc25="" class="col-lg-12">
+                                                <h3 _ngcontent-sc25=""><span _ngcontent-sc25="">© 2023 Designli, LLC.
+                                                        141 Traction St Greenville, SC 29611</span></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </app-second-footer></div>
+                </div>
+                <p _ngcontent-sc26="" class="parallax"></p>
+            </app-services><!----></app-main></app-root>
+
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-50604039-1"></script>-->
+    <!--<script>-->
+    <!--  window.dataLayer = window.dataLayer || [];-->
+    <!--  function gtag() {-->
+    <!--    dataLayer.push(arguments);-->
+    <!--  }-->
+    <!--  gtag('js', new Date());-->
+    <!--  gtag('config', 'UA-50604039-1');-->
+    <!--</script>-->
+    <noscript>Please enable JavaScript to continue using this application.</noscript>
+
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-596FGPJ"></script>-->
+
+
+    <script src="runtime-es2015.b948044840398824f16e.js" type="module"></script>
+    <script src="runtime-es5.b948044840398824f16e.js" nomodule="" defer=""></script>
+    <script src="polyfills-es5.517f1d5415025b3e9b1a.js" nomodule="" defer=""></script>
+    <script src="polyfills-es2015.d3e61f0dd2b58e518eca.js" type="module"></script>
+    <script src="scripts.b6a23a228dd618068b2b.js" defer=""></script>
+    <script src="main-es2015.89c9d6e73ba1d6b8a280.js" type="module"></script>
+    <script src="main-es5.89c9d6e73ba1d6b8a280.js" nomodule="" defer=""></script>
+
+</body>
+
+</html>
